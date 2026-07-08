@@ -1,93 +1,114 @@
 # Narrative Watchtower
 
-**AI-powered public-source narrative intelligence for Bangladesh's information security.**
+Public-source narrative intelligence for Bangladesh's information security.
 
-Built for the **SciBlitz AI Challenge 2026** (IEEE Student Branch, CUET) — **Track E: National Defence**.
+**Live demo:** https://narrative-watchtower.vercel.app (no login required)
 
-> **🔴 Live demo (no login):** https://narrative-watchtower.vercel.app
-> **🧠 AI:** narrative analysis by **Claude Opus 4.8** + local **multilingual-e5** embeddings — precomputed offline, served as bundled JSON.
-> The project report and Model & Data Card are submitted separately per the competition process.
+Built for the SciBlitz AI Challenge 2026 (IEEE Student Branch, CUET), Track E: National Defence.
 
-Modern national security is shaped not only by borders but by information flows. In Bangladesh,
-public narratives move quickly across local media, foreign media, fact-checkers, and political
-actors — and a distorted or communal claim can create diplomatic pressure or communal tension before
-institutions respond. Narrative Watchtower is a **public-source OSINT and narrative-intelligence
-dashboard** that detects emerging narratives, compares cross-border media framing, matches claims
-against fact-checks, and gives analysts **evidence-backed early warnings**.
+## The problem
 
-> This is **not** a surveillance product. It uses only public-source data, never identifies private
-> citizens, never assigns guilt or intent, links evidence for every claim, flags uncertainty, and
-> requires human analyst review. It is designed for democratic resilience and misinformation response.
+In Bangladesh, a false or communal claim can travel across local media, Indian media, and social
+platforms within hours. By the time institutions react, the narrative has already settled. The
+analysts who need to catch this early are facing tens of thousands of articles, posts, and fact
+checks in two languages, far more than any person can read.
 
-## Features
+## What it does
 
-- **Overview** — mission + live corpus metrics and emerging risks.
-- **Narrative Explorer** — clusters of articles/posts/fact-checks with AI summaries and explainable risk.
-- **Cross-Border Framing** — how Bangladeshi vs Indian/foreign outlets frame the same event, with an AI framing-gap explanation and citations.
-- **Rumor Risk Center** — matches current coverage against Rumor Scanner fact-checks (verdicts: false / misleading / distorted).
-- **Public Figure Tracker** — recent emphasis and connected narratives from public posts (evidence only, non-defamatory).
-- **Analyst Copilot** — retrieval-grounded chat; every answer carries citations + a confidence level.
-- **Demo Mode** — three preloaded, reliable intelligence stories for judging.
-- **Methodology** — full transparency on data, pipeline, scoring, and ethics.
+Narrative Watchtower reads the public record and turns it into evidence-backed early warning. It
+works from a curated corpus of about 3,400 documents: Bangladeshi and Indian news coverage, 550
+Rumor Scanner fact checks, and public posts from 49 political figures and organisations.
+
+![Cross-border framing view](.github/cross-border.png)
+
+The dashboard has eight views:
+
+- **Narratives.** Coverage grouped into 15 narrative clusters, each with a plain-language summary
+  and a risk score you can inspect factor by factor.
+- **Cross-Border Framing.** How Bangladeshi and Indian outlets frame the same event: what both
+  sides agree on, where they diverge, and what each side leaves out.
+- **Rumor Risk.** Current articles and posts matched against known false claims by semantic
+  similarity, across Bangla and English.
+- **Public Figures.** What 49 public figures have been emphasising in their public posts, with
+  links to the posts themselves.
+- **Connection Graph.** Which figures and outlets connect to which narratives.
+- **Analyst Copilot.** Ask a question in plain language and get an answer built only from
+  retrieved evidence, with citations and a confidence level.
+- **Demo Mode.** Three guided walkthroughs of real cases.
+- **Methodology.** The full pipeline, evaluation numbers, and the ethics rules the system follows.
+
+## How it works
+
+All of the heavy AI runs offline, ahead of time. The deployed app serves precomputed results as
+bundled JSON, so it is fast and needs no API keys or database at runtime.
+
+Three pieces do the analytical work:
+
+1. **Claude Opus 4.8** reads the entire curated corpus in one long context and writes the
+   narrative clusters, the cross-border framing comparisons, and the public-figure summaries.
+   Every output is traceable back to its source documents.
+2. **multilingual-e5**, a multilingual embedding model running locally through ONNX, embeds every
+   document so that Bangla and English land in the same vector space. This powers the claim
+   matching: current content is compared against known false claims, and anything above a
+   calibrated similarity threshold is flagged as a risk signal for human review.
+3. **Hybrid retrieval** grounds the Analyst Copilot. BM25 finds lexical matches, precomputed
+   embedding neighbours add semantically related evidence, and answers are composed only from
+   what was retrieved.
+
+```
+MongoDB + Facebook posts + Rumor Scanner
+  -> curate -> embed (multilingual-e5, local) -> analyse (Claude Opus 4.8, offline)
+  -> claim matching, neighbours, entity graph, risk scoring, evaluation
+  -> data/*.json -> Next.js on Vercel -> dashboard + /api/copilot
+```
 
 ## Tech stack
 
 | Layer | Choice |
 | --- | --- |
-| Frontend + API | Next.js 16 (App Router) · TypeScript · Tailwind CSS v4 |
-| UI | Custom dark "intelligence console" design system · lucide-react · d3-force graph |
-| Reasoning | **Claude Opus 4.8 (1M context)** — narrative clustering, cross-border framing, figure summaries (offline) |
-| Embeddings | **multilingual-e5** (Transformers.js/ONNX, local, 384-dim) — Bangla + English, cross-lingual |
-| Retrieval | Hybrid: BM25 sparse + dense embedding-neighbor expansion (no runtime model) |
-| Raw data | MongoDB (read-only) — scraped articles, fact-checks, public posts |
-| Deploy | Vercel (public URL, no login, no runtime secrets) |
+| App | Next.js 16, TypeScript, Tailwind CSS v4 |
+| Analysis | Claude Opus 4.8 (offline), multilingual-e5 embeddings (local, ONNX) |
+| Retrieval | BM25 plus dense neighbour expansion, no model inference at runtime |
+| Data | MongoDB (read-only source), bundled JSON at runtime |
+| Hosting | Vercel |
 
-## Architecture — precompute offline, serve intelligence at runtime
-
-All expensive/flaky AI (embeddings, clustering, cross-border framing, claim matching, risk, graph)
-runs **offline** in `scripts/` and is cached to `data/*.json`. The deployed app serves that precomputed
-intelligence — fast, cheap, and unbreakable during judging, with **no runtime secrets**. The Analyst
-Copilot does hybrid retrieval + a grounded answer (precomputed cache + optional live Claude synthesis).
-
-```
-MongoDB + FB posts + Rumor Scanner
-   → curate → embed (multilingual-e5, local) → Claude Opus 4.8 analysis (offline)
-   → match (cross-lingual) · neighbors · graph · risk · eval
-   → data/*.json (bundled) → Next.js on Vercel → dashboard + /api/copilot (hybrid retrieval)
-```
-
-## Setup
+## Running it locally
 
 ```bash
-# 1. Install
 npm install
-
-# 2. Configure (offline pipeline only; runtime needs NO secrets)
-cp .env.example .env.local
-#   MONGODB_URI=...            (read-only, for the data pipeline)
-#   ANTHROPIC_API_KEY=...      (optional — enables live Copilot synthesis)
-
-# 3. Run the offline pipeline (produces data/*.json)
-npm run audit:mongo    # inspect the database (read-only) → data_audit.md
-npm run curate         # normalise + curate the high-signal corpus
-npm run reindex        # embed (multilingual-e5) → match → neighbors → graph → eval
-#   Narrative / cross-border / figure analysis is run via Claude Opus 4.8 (see scripts/).
-npm run assemble && npm run build-demo
-
-# 4. Develop / build
-npm run dev            # http://localhost:3000
-npm run build && npm start
+npm run dev          # the app runs on bundled data, no secrets needed
 ```
 
-The deployed app needs **no runtime secrets** — all intelligence is bundled JSON. It shows an honest
-"awaiting data" state until the pipeline has produced `data/*.json`.
+To rebuild the data pipeline from the raw sources:
 
-## Attributions
+```bash
+cp .env.example .env.local   # set MONGODB_URI (read-only)
+npm run audit:mongo          # inspect the source database
+npm run curate               # build the curated corpus
+npm run reindex              # embed, match claims, build neighbours, graph, eval
+npm run assemble             # assemble dashboard artifacts
+npm run build-demo           # build the guided demo stories
+```
 
-- **Rumor Scanner Bangladesh** — fact-check reference data (verdict taxonomy: false / misleading / unverified / satire).
-- **Claude Opus 4.8** (Anthropic) — narrative/framing/figure analysis and optional Copilot synthesis, used under Anthropic's terms.
-- **multilingual-e5** embedding model, run locally via **Transformers.js / ONNX Runtime** (no data leaves for embeddings).
-- Open-source: Next.js, React, Tailwind CSS, MongoDB Node driver, d3-force, lucide-react.
-- Indian/foreign coverage of Bangladesh is drawn from the provided corpus (Anandabazar Patrika, ABP Ananda, etc.); no separate scraping was needed.
+An optional `ANTHROPIC_API_KEY` in `.env.local` enables live Copilot synthesis for arbitrary
+questions. Without it, the Copilot still answers from retrieval and a precomputed cache.
 
-See the **Methodology** page in-app and the Model & Data Card for full detail on data, models, limitations, and ethics.
+## Data and models
+
+- **Rumor Scanner Bangladesh**: fact-check reference data (verdicts: false, misleading,
+  unverified, satire).
+- **Claude Opus 4.8** (Anthropic): offline analysis and optional Copilot synthesis, used under
+  Anthropic's terms.
+- **multilingual-e5** embedding model, run locally via Transformers.js and ONNX Runtime. No
+  content is sent to a hosted embedding API.
+- Open source: Next.js, React, Tailwind CSS, MongoDB Node driver, d3-force, lucide-react.
+- Indian and foreign coverage of Bangladesh comes from the provided news corpus (Anandabazar
+  Patrika, ABP Ananda, and others).
+
+## Ethics
+
+This is not a surveillance tool. It uses public-source data only, never identifies private
+citizens, and never assigns guilt or intent. Every claim links to its evidence, uncertainty is
+flagged rather than hidden, and every screen states that human analyst review is required. The
+goal is democratic resilience and misinformation response. The in-app Methodology page documents
+the pipeline, the evaluation numbers, and the system's limitations.
