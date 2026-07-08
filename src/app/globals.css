@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+/*
+  Narrative Watchtower — dark "intelligence console" design system.
+  All colors are semantic tokens (HSL components) so components never hardcode color.
+  Dark theme by default; not dependent on prefers-color-scheme.
+*/
+:root {
+  --base: 222 26% 6%;        /* deepest background */
+  --surface: 222 22% 9%;     /* card surface */
+  --elevated: 221 20% 12%;   /* elevated panels, hovers */
+  --border: 220 16% 18%;     /* hairline borders */
+  --border-strong: 220 16% 26%;
+
+  --fg: 210 24% 94%;         /* primary text */
+  --muted: 215 16% 64%;      /* secondary text */
+  --faint: 218 14% 46%;      /* tertiary / captions */
+
+  --accent: 38 94% 56%;      /* signal amber — brand / alerts */
+  --accent-fg: 32 40% 8%;
+  --accent-2: 190 88% 52%;   /* intel cyan — info / links */
+
+  --risk-low: 150 58% 46%;   /* green */
+  --risk-med: 40 92% 56%;    /* amber */
+  --risk-high: 2 78% 60%;    /* red */
+
+  --ring: 190 88% 52%;
+}
+
+@theme inline {
+  --color-base: hsl(var(--base));
+  --color-surface: hsl(var(--surface));
+  --color-elevated: hsl(var(--elevated));
+  --color-border: hsl(var(--border));
+  --color-border-strong: hsl(var(--border-strong));
+
+  --color-fg: hsl(var(--fg));
+  --color-muted: hsl(var(--muted));
+  --color-faint: hsl(var(--faint));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-fg: hsl(var(--accent-fg));
+  --color-accent-2: hsl(var(--accent-2));
+
+  --color-risk-low: hsl(var(--risk-low));
+  --color-risk-med: hsl(var(--risk-med));
+  --color-risk-high: hsl(var(--risk-high));
+
+  --color-ring: hsl(var(--ring));
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background: hsl(var(--base));
+  color: hsl(var(--fg));
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* subtle grid backdrop for the "console" feel */
+.bg-grid {
+  background-image:
+    linear-gradient(hsl(var(--border) / 0.22) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--border) / 0.22) 1px, transparent 1px);
+  background-size: 44px 44px;
+  background-position: -1px -1px;
+}
+
+::selection {
+  background: hsl(var(--accent-2) / 0.28);
+}
+
+/* thin scrollbars */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--border-strong)) transparent;
+}
