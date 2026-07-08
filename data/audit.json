@@ -1,0 +1,3848 @@
+{
+  "generated_at": "2026-07-06T05:57:50.495Z",
+  "databases": [
+    {
+      "name": "AIAggregator",
+      "collections": [
+        {
+          "name": "narrative_analyses",
+          "count": 0,
+          "sampled": 0,
+          "kind": "empty",
+          "language": "mixed/unknown",
+          "date_range": null,
+          "fields": {}
+        },
+        {
+          "name": "figure_profiles",
+          "count": 0,
+          "sampled": 0,
+          "kind": "empty",
+          "language": "mixed/unknown",
+          "date_range": null,
+          "fields": {}
+        },
+        {
+          "name": "youtube_transcripts",
+          "count": 0,
+          "sampled": 0,
+          "kind": "empty",
+          "language": "mixed/unknown",
+          "date_range": null,
+          "fields": {}
+        }
+      ]
+    },
+    {
+      "name": "admin",
+      "collections": []
+    },
+    {
+      "name": "google_news_database",
+      "collections": [
+        {
+          "name": "youtube_videos",
+          "count": 3130,
+          "sampled": 200,
+          "kind": "other",
+          "language": "mostly Bangla",
+          "date_range": {
+            "from": "2023-12-06T08:40:49.000Z",
+            "to": "2026-07-05T05:30:11.081Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "videoId": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "__v": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "categoryIds": {
+              "coverage": "100%",
+              "types": [
+                "array"
+              ]
+            },
+            "channelId": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "channelTitle": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "createdAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "description": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "durationBucket": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "durationSeconds": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "durationString": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "likeCount": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "publishedAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "statsUpdatedAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "thumbnail": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "title": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "updatedAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "viewCount": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            }
+          }
+        },
+        {
+          "name": "notification_emails",
+          "count": 4,
+          "sampled": 4,
+          "kind": "other",
+          "language": "mixed/unknown",
+          "date_range": {
+            "from": "2026-06-19T23:50:50.962Z",
+            "to": "2026-06-28T04:53:57.406Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "email": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "createdAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "sessionId": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "siteId": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "updatedAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "userId": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            }
+          }
+        },
+        {
+          "name": "notification_log",
+          "count": 117,
+          "sampled": 117,
+          "kind": "article?",
+          "language": "mostly Bangla",
+          "date_range": {
+            "from": "2026-06-08T17:05:26.731Z",
+            "to": "2026-06-29T01:05:04.105Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "type": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "userId": {
+              "coverage": "100%",
+              "types": [
+                "null",
+                "string"
+              ]
+            },
+            "topic": {
+              "coverage": "100%",
+              "types": [
+                "string",
+                "null"
+              ]
+            },
+            "siteId": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "title": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "body": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "image": {
+              "coverage": "100%",
+              "types": [
+                "string",
+                "null"
+              ]
+            },
+            "channel": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "fcmMessageId": {
+              "coverage": "100%",
+              "types": [
+                "string",
+                "null"
+              ]
+            },
+            "aiGenerated": {
+              "coverage": "100%",
+              "types": [
+                "boolean"
+              ]
+            },
+            "payload": {
+              "coverage": "100%",
+              "types": [
+                "object"
+              ]
+            },
+            "sentAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "createdAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "updatedAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "__v": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            }
+          }
+        },
+        {
+          "name": "election_unofficial",
+          "count": 3,
+          "sampled": 3,
+          "kind": "other",
+          "language": "mostly Bangla",
+          "date_range": {
+            "from": "2026-02-22T09:31:18.522Z",
+            "to": "2026-07-06T05:45:14.155Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "sourceId": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "year": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "__v": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "parties": {
+              "coverage": "100%",
+              "types": [
+                "object"
+              ]
+            },
+            "scrapedAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "sourceName": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "sourceUrl": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            }
+          }
+        },
+        {
+          "name": "device_user_links",
+          "count": 31621,
+          "sampled": 200,
+          "kind": "other",
+          "language": "mixed/unknown",
+          "date_range": {
+            "from": "2026-05-16T20:42:44.919Z",
+            "to": "2026-07-06T04:59:29.339Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "deviceId": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "siteId": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "__v": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "linkedAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "userId": {
+              "coverage": "100%",
+              "types": [
+                "null"
+              ]
+            }
+          }
+        },
+        {
+          "name": "rumor_chat_sessions",
+          "count": 26,
+          "sampled": 26,
+          "kind": "fact_check?",
+          "language": "mixed/unknown",
+          "date_range": {
+            "from": "2026-06-06T21:01:49.571Z",
+            "to": "2026-06-23T19:54:58.501Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "session_id": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "user_id": {
+              "coverage": "100%",
+              "types": [
+                "null"
+              ]
+            },
+            "device_id": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "rumor_context_id": {
+              "coverage": "100%",
+              "types": [
+                "string",
+                "null"
+              ]
+            },
+            "messages": {
+              "coverage": "100%",
+              "types": [
+                "array"
+              ]
+            },
+            "created_at": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "updated_at": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "__v": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            }
+          }
+        },
+        {
+          "name": "emailsubscribers",
+          "count": 13,
+          "sampled": 13,
+          "kind": "other",
+          "language": "mixed/unknown",
+          "date_range": {
+            "from": "2026-04-30T19:24:07.689Z",
+            "to": "2026-07-05T12:00:08.596Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "email": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "status": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "unsubscribeToken": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "digestCount": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "createdAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "updatedAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "__v": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "confirmedAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "newsDigestCount": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "lastDigestSentAt": {
+              "coverage": "92%",
+              "types": [
+                "date"
+              ]
+            },
+            "lastNewsDigestSentAt": {
+              "coverage": "92%",
+              "types": [
+                "date"
+              ]
+            },
+            "confirmToken": {
+              "coverage": "38%",
+              "types": [
+                "string"
+              ]
+            },
+            "unsubscribedAt": {
+              "coverage": "8%",
+              "types": [
+                "date"
+              ]
+            }
+          }
+        },
+        {
+          "name": "election",
+          "count": 8,
+          "sampled": 8,
+          "kind": "other",
+          "language": "mostly Bangla",
+          "date_range": {
+            "from": "2001-10-01T00:00:00.000Z",
+            "to": "2026-03-10T10:16:08.116Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "year": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "title": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "titleEn": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "date": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "totalSeats": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "majorityMark": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "voterTurnout": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "totalRegisteredVoters": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "totalVotesCast": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "status": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "notes": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "notesBn": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "wikiUrl": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "parties": {
+              "coverage": "100%",
+              "types": [
+                "array"
+              ]
+            },
+            "lastUpdated": {
+              "coverage": "25%",
+              "types": [
+                "date"
+              ]
+            },
+            "divisionResults": {
+              "coverage": "13%",
+              "types": [
+                "array"
+              ]
+            },
+            "voterDemographics": {
+              "coverage": "13%",
+              "types": [
+                "object"
+              ]
+            },
+            "divisions": {
+              "coverage": "13%",
+              "types": [
+                "array"
+              ]
+            },
+            "stats": {
+              "coverage": "13%",
+              "types": [
+                "object"
+              ]
+            },
+            "constituencies": {
+              "coverage": "13%",
+              "types": [
+                "array"
+              ]
+            },
+            "analytics": {
+              "coverage": "13%",
+              "types": [
+                "object"
+              ]
+            },
+            "electionFacts": {
+              "coverage": "13%",
+              "types": [
+                "object"
+              ]
+            },
+            "nominationStats": {
+              "coverage": "13%",
+              "types": [
+                "object"
+              ]
+            }
+          }
+        },
+        {
+          "name": "featured_history",
+          "count": 5,
+          "sampled": 5,
+          "kind": "other",
+          "language": "mixed/unknown",
+          "date_range": {
+            "from": "2025-12-27T00:00:00.000Z",
+            "to": "2026-01-20T20:39:22.951Z"
+          },
+          "fields": {
+            "timestamp": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "metadata": {
+              "coverage": "100%",
+              "types": [
+                "object"
+              ]
+            },
+            "event_type": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "reason": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "duration_hours": {
+              "coverage": "80%",
+              "types": [
+                "number"
+              ]
+            },
+            "priority": {
+              "coverage": "80%",
+              "types": [
+                "number"
+              ]
+            },
+            "featured_until": {
+              "coverage": "80%",
+              "types": [
+                "date"
+              ]
+            },
+            "featured_start": {
+              "coverage": "80%",
+              "types": [
+                "date"
+              ]
+            },
+            "batch_date": {
+              "coverage": "80%",
+              "types": [
+                "string"
+              ]
+            },
+            "marked_by": {
+              "coverage": "80%",
+              "types": [
+                "string"
+              ]
+            },
+            "unfeatured_by": {
+              "coverage": "20%",
+              "types": [
+                "string"
+              ]
+            },
+            "previous_priority": {
+              "coverage": "20%",
+              "types": [
+                "number"
+              ]
+            },
+            "was_featured_until": {
+              "coverage": "20%",
+              "types": [
+                "date"
+              ]
+            }
+          }
+        },
+        {
+          "name": "opinions",
+          "count": 22,
+          "sampled": 22,
+          "kind": "other",
+          "language": "mostly Bangla",
+          "date_range": {
+            "from": "2026-02-21T10:58:12.214Z",
+            "to": "2026-04-14T17:47:14.505Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "author": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "authorName": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "authorPicture": {
+              "coverage": "100%",
+              "types": [
+                "string",
+                "null"
+              ]
+            },
+            "title": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "summary": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "bullets": {
+              "coverage": "100%",
+              "types": [
+                "array"
+              ]
+            },
+            "fullContent": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "coverImage": {
+              "coverage": "100%",
+              "types": [
+                "string",
+                "null"
+              ]
+            },
+            "tags": {
+              "coverage": "100%",
+              "types": [
+                "array"
+              ]
+            },
+            "category": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "status": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "readsCount": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "bookmarksCount": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "sharesCount": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "createdAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "updatedAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "__v": {
+              "coverage": "59%",
+              "types": [
+                "number"
+              ]
+            }
+          }
+        },
+        {
+          "name": "llm_usage",
+          "count": 2,
+          "sampled": 2,
+          "kind": "other",
+          "language": "mixed/unknown",
+          "date_range": {
+            "from": "2025-09-30T18:56:23.984Z",
+            "to": "2026-06-01T13:10:35.079Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "created_at": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "last_model": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "last_updated": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "total_calls": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "total_cost_usd": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "total_prompt_tokens": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "total_response_tokens": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "total_tokens": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            }
+          }
+        },
+        {
+          "name": "subscriptions",
+          "count": 0,
+          "sampled": 0,
+          "kind": "empty",
+          "language": "mixed/unknown",
+          "date_range": null,
+          "fields": {}
+        },
+        {
+          "name": "userBias",
+          "count": 2,
+          "sampled": 2,
+          "kind": "other",
+          "language": "mixed/unknown",
+          "date_range": null,
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "userId": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "__v": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "totalUpvoted": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "spectrum": {
+              "coverage": "100%",
+              "types": [
+                "object"
+              ]
+            },
+            "socio_cultural": {
+              "coverage": "50%",
+              "types": [
+                "object"
+              ]
+            },
+            "geopolitical": {
+              "coverage": "50%",
+              "types": [
+                "object"
+              ]
+            },
+            "totalDownvoted": {
+              "coverage": "50%",
+              "types": [
+                "number"
+              ]
+            }
+          }
+        },
+        {
+          "name": "referrals",
+          "count": 0,
+          "sampled": 0,
+          "kind": "empty",
+          "language": "mixed/unknown",
+          "date_range": null,
+          "fields": {}
+        },
+        {
+          "name": "bookmarks",
+          "count": 0,
+          "sampled": 0,
+          "kind": "empty",
+          "language": "mixed/unknown",
+          "date_range": null,
+          "fields": {}
+        },
+        {
+          "name": "withdrawals",
+          "count": 0,
+          "sampled": 0,
+          "kind": "empty",
+          "language": "mixed/unknown",
+          "date_range": null,
+          "fields": {}
+        },
+        {
+          "name": "pointstransactions",
+          "count": 17,
+          "sampled": 17,
+          "kind": "other",
+          "language": "mixed/unknown",
+          "date_range": {
+            "from": "2026-03-04T17:34:13.304Z",
+            "to": "2026-06-12T08:23:29.218Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "userId": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "type": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "action": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "points": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "balanceAfter": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "referenceId": {
+              "coverage": "100%",
+              "types": [
+                "null"
+              ]
+            },
+            "referenceType": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "metadata": {
+              "coverage": "100%",
+              "types": [
+                "object"
+              ]
+            },
+            "description": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "createdAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "updatedAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "__v": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            }
+          }
+        },
+        {
+          "name": "widgetapikeys",
+          "count": 0,
+          "sampled": 0,
+          "kind": "empty",
+          "language": "mixed/unknown",
+          "date_range": null,
+          "fields": {}
+        },
+        {
+          "name": "newsmedia",
+          "count": 3946,
+          "sampled": 200,
+          "kind": "other",
+          "language": "mostly English",
+          "date_range": {
+            "from": "2025-06-23T16:40:49.521Z",
+            "to": "2026-05-26T12:17:40.014Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "url": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "name": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "created_at": {
+              "coverage": "90%",
+              "types": [
+                "date"
+              ]
+            },
+            "status": {
+              "coverage": "89%",
+              "types": [
+                "string"
+              ]
+            },
+            "news_selector": {
+              "coverage": "15%",
+              "types": [
+                "object"
+              ]
+            },
+            "geo": {
+              "coverage": "12%",
+              "types": [
+                "string"
+              ]
+            },
+            "reasoning": {
+              "coverage": "12%",
+              "types": [
+                "string"
+              ]
+            },
+            "bias": {
+              "coverage": "12%",
+              "types": [
+                "object"
+              ]
+            },
+            "bias_old": {
+              "coverage": "5%",
+              "types": [
+                "object"
+              ]
+            },
+            "coverage_areas": {
+              "coverage": "4%",
+              "types": [
+                "array"
+              ]
+            },
+            "credibility_score": {
+              "coverage": "4%",
+              "types": [
+                "number"
+              ]
+            },
+            "tier": {
+              "coverage": "4%",
+              "types": [
+                "string"
+              ]
+            },
+            "google_news_publication_id": {
+              "coverage": "3%",
+              "types": [
+                "string"
+              ]
+            },
+            "google_news_publication_url": {
+              "coverage": "3%",
+              "types": [
+                "string"
+              ]
+            },
+            "updated_at": {
+              "coverage": "2%",
+              "types": [
+                "date"
+              ]
+            }
+          }
+        },
+        {
+          "name": "whatsappsubscribers",
+          "count": 2,
+          "sampled": 2,
+          "kind": "other",
+          "language": "mixed/unknown",
+          "date_range": {
+            "from": "2026-05-03T07:39:14.147Z",
+            "to": "2026-06-02T12:00:09.709Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "phone": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "__v": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "createdAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "digestCount": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "status": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "updatedAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "lastDigestSentAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            }
+          }
+        },
+        {
+          "name": "jobs",
+          "count": 0,
+          "sampled": 0,
+          "kind": "empty",
+          "language": "mixed/unknown",
+          "date_range": null,
+          "fields": {}
+        },
+        {
+          "name": "chatsessions",
+          "count": 0,
+          "sampled": 0,
+          "kind": "empty",
+          "language": "mixed/unknown",
+          "date_range": null,
+          "fields": {}
+        },
+        {
+          "name": "test_failover_check",
+          "count": 0,
+          "sampled": 0,
+          "kind": "fact_check?",
+          "language": "mixed/unknown",
+          "date_range": null,
+          "fields": {}
+        },
+        {
+          "name": "points",
+          "count": 18,
+          "sampled": 18,
+          "kind": "other",
+          "language": "mixed/unknown",
+          "date_range": {
+            "from": "2026-03-02T05:36:30.608Z",
+            "to": "2026-06-12T08:23:29.203Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "userId": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "totalPoints": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "availablePoints": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "pendingPoints": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "lifetimeEarned": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "lifetimeWithdrawn": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "dailyStats": {
+              "coverage": "100%",
+              "types": [
+                "object"
+              ]
+            },
+            "createdAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "updatedAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "__v": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            }
+          }
+        },
+        {
+          "name": "push_tokens",
+          "count": 5,
+          "sampled": 5,
+          "kind": "other",
+          "language": "mostly English",
+          "date_range": {
+            "from": "2026-06-08T17:04:42.999Z",
+            "to": "2026-06-12T20:07:30.838Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "fcmToken": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "__v": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "active": {
+              "coverage": "100%",
+              "types": [
+                "boolean"
+              ]
+            },
+            "createdAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "deviceId": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "lastUsedAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "platform": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "siteId": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "topics": {
+              "coverage": "100%",
+              "types": [
+                "array"
+              ]
+            },
+            "updatedAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "userId": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            }
+          }
+        },
+        {
+          "name": "knowledgegroups",
+          "count": 0,
+          "sampled": 0,
+          "kind": "empty",
+          "language": "mixed/unknown",
+          "date_range": null,
+          "fields": {}
+        },
+        {
+          "name": "blogs",
+          "count": 2,
+          "sampled": 2,
+          "kind": "other",
+          "language": "mixed/unknown",
+          "date_range": {
+            "from": "2026-04-09T18:49:06.494Z",
+            "to": "2026-07-03T20:01:51.231Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "author": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "authorName": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "authorPicture": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "title": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "summary": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "bullets": {
+              "coverage": "100%",
+              "types": [
+                "array"
+              ]
+            },
+            "fullContent": {
+              "coverage": "100%",
+              "types": [
+                "string",
+                "null"
+              ]
+            },
+            "coverImage": {
+              "coverage": "100%",
+              "types": [
+                "string",
+                "null"
+              ]
+            },
+            "tags": {
+              "coverage": "100%",
+              "types": [
+                "array"
+              ]
+            },
+            "category": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "status": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "readsCount": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "bookmarksCount": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "sharesCount": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "createdAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "updatedAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "__v": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            }
+          }
+        },
+        {
+          "name": "notification_preferences",
+          "count": 3,
+          "sampled": 3,
+          "kind": "other",
+          "language": "mixed/unknown",
+          "date_range": {
+            "from": "2026-06-08T17:04:44.423Z",
+            "to": "2026-06-12T20:07:30.854Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "userId": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "__v": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "autoPersonalize": {
+              "coverage": "100%",
+              "types": [
+                "boolean"
+              ]
+            },
+            "breakingNews": {
+              "coverage": "100%",
+              "types": [
+                "boolean"
+              ]
+            },
+            "createdAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "dailyDigest": {
+              "coverage": "100%",
+              "types": [
+                "boolean"
+              ]
+            },
+            "maxPushPerDay": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "perspectiveReady": {
+              "coverage": "100%",
+              "types": [
+                "boolean"
+              ]
+            },
+            "pushEnabled": {
+              "coverage": "100%",
+              "types": [
+                "boolean"
+              ]
+            },
+            "rumorAlerts": {
+              "coverage": "100%",
+              "types": [
+                "boolean"
+              ]
+            },
+            "subscribedTopics": {
+              "coverage": "100%",
+              "types": [
+                "array"
+              ]
+            },
+            "timezone": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "topNews": {
+              "coverage": "100%",
+              "types": [
+                "boolean"
+              ]
+            },
+            "updatedAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            }
+          }
+        },
+        {
+          "name": "reports",
+          "count": 0,
+          "sampled": 0,
+          "kind": "empty",
+          "language": "mixed/unknown",
+          "date_range": null,
+          "fields": {}
+        },
+        {
+          "name": "activity_events",
+          "count": 140962,
+          "sampled": 200,
+          "kind": "other",
+          "language": "mixed/unknown",
+          "date_range": {
+            "from": "2026-05-16T14:59:03.590Z",
+            "to": "2026-07-05T22:34:27.344Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "deviceId": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "userId": {
+              "coverage": "100%",
+              "types": [
+                "null",
+                "objectId"
+              ]
+            },
+            "sessionId": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "eventType": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "pagePath": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "pageTitle": {
+              "coverage": "100%",
+              "types": [
+                "null"
+              ]
+            },
+            "referrer": {
+              "coverage": "100%",
+              "types": [
+                "null"
+              ]
+            },
+            "timestamp": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "durationMs": {
+              "coverage": "100%",
+              "types": [
+                "number",
+                "null"
+              ]
+            },
+            "scrollDepthPct": {
+              "coverage": "100%",
+              "types": [
+                "null"
+              ]
+            },
+            "platform": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "userAgent": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "screenWidth": {
+              "coverage": "100%",
+              "types": [
+                "number",
+                "null"
+              ]
+            },
+            "screenHeight": {
+              "coverage": "100%",
+              "types": [
+                "number",
+                "null"
+              ]
+            },
+            "siteId": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "__v": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            }
+          }
+        },
+        {
+          "name": "election_headlines",
+          "count": 101,
+          "sampled": 101,
+          "kind": "other",
+          "language": "mostly Bangla",
+          "date_range": {
+            "from": "2026-02-13T03:39:32.131Z",
+            "to": "2026-07-06T05:45:03.387Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "url": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "__v": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "createdAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "description": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "language": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "publishedAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "scrapedAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "sourceId": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "sourceName": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "title": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            }
+          }
+        },
+        {
+          "name": "rumor_checks",
+          "count": 12847,
+          "sampled": 200,
+          "kind": "fact_check?",
+          "language": "mostly Bangla",
+          "date_range": {
+            "from": "2022-01-11T00:45:25.000Z",
+            "to": "2026-05-04T13:23:25.996Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "source_url": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "categories_raw": {
+              "coverage": "100%",
+              "types": [
+                "array"
+              ]
+            },
+            "category": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "claim_text": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "confidence_tier": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "explanation_original": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "image_url": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "published_at": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "related_event_ids": {
+              "coverage": "100%",
+              "types": [
+                "array"
+              ]
+            },
+            "scraped_at": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "source": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "source_links": {
+              "coverage": "100%",
+              "types": [
+                "array"
+              ]
+            },
+            "title": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "verdict": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "verdict_raw": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "verdict_type": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "body_markdown": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "body_text": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "images": {
+              "coverage": "100%",
+              "types": [
+                "array"
+              ]
+            },
+            "search_text": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "analysis": {
+              "coverage": "66%",
+              "types": [
+                "object"
+              ]
+            },
+            "body_text_cleaned": {
+              "coverage": "39%",
+              "types": [
+                "boolean"
+              ]
+            },
+            "summary_ai": {
+              "coverage": "5%",
+              "types": [
+                "null"
+              ]
+            }
+          }
+        },
+        {
+          "name": "users",
+          "count": 32194,
+          "sampled": 200,
+          "kind": "other",
+          "language": "mostly English",
+          "date_range": {
+            "from": "2026-02-28T14:50:36.528Z",
+            "to": "2026-07-05T09:14:12.261Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "userId": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "globalUserId": {
+              "coverage": "100%",
+              "types": [
+                "array"
+              ]
+            },
+            "name": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "phoneVerified": {
+              "coverage": "100%",
+              "types": [
+                "boolean"
+              ]
+            },
+            "selectedTopics": {
+              "coverage": "100%",
+              "types": [
+                "array"
+              ]
+            },
+            "isActivated": {
+              "coverage": "100%",
+              "types": [
+                "boolean"
+              ]
+            },
+            "onboardingCompleted": {
+              "coverage": "100%",
+              "types": [
+                "boolean"
+              ]
+            },
+            "isVerified": {
+              "coverage": "100%",
+              "types": [
+                "boolean"
+              ]
+            },
+            "authMethod": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "bubblesPerPage": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "isActive": {
+              "coverage": "100%",
+              "types": [
+                "boolean"
+              ]
+            },
+            "accessTokens": {
+              "coverage": "100%",
+              "types": [
+                "array"
+              ]
+            },
+            "subscriptionStatus": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "subscriptionPlan": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "paymentInfo": {
+              "coverage": "100%",
+              "types": [
+                "array"
+              ]
+            },
+            "createdAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "updatedAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "__v": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "deviceId": {
+              "coverage": "99%",
+              "types": [
+                "string"
+              ]
+            },
+            "googleId": {
+              "coverage": "2%",
+              "types": [
+                "string"
+              ]
+            },
+            "email": {
+              "coverage": "2%",
+              "types": [
+                "string"
+              ]
+            },
+            "profilePicture": {
+              "coverage": "2%",
+              "types": [
+                "string"
+              ]
+            },
+            "referralCode": {
+              "coverage": "2%",
+              "types": [
+                "string"
+              ]
+            }
+          }
+        },
+        {
+          "name": "google_news_events",
+          "count": 11273,
+          "sampled": 200,
+          "kind": "other",
+          "language": "mostly Bangla",
+          "date_range": {
+            "from": "2025-10-10T00:00:00.000Z",
+            "to": "2026-06-28T06:05:53.878Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "url": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "category": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "info": {
+              "coverage": "100%",
+              "types": [
+                "object"
+              ]
+            },
+            "published_time": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "scraped_at": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "show_image": {
+              "coverage": "100%",
+              "types": [
+                "boolean"
+              ]
+            },
+            "source": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "source_logo": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "tab_name": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "title": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "published_at": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "article_image": {
+              "coverage": "98%",
+              "types": [
+                "string"
+              ]
+            },
+            "last_updated": {
+              "coverage": "97%",
+              "types": [
+                "date"
+              ]
+            },
+            "topics_extracted_at": {
+              "coverage": "68%",
+              "types": [
+                "date"
+              ]
+            },
+            "country_code": {
+              "coverage": "60%",
+              "types": [
+                "string"
+              ]
+            },
+            "language_code": {
+              "coverage": "60%",
+              "types": [
+                "string"
+              ]
+            },
+            "short_id": {
+              "coverage": "33%",
+              "types": [
+                "string"
+              ]
+            },
+            "time_to_read": {
+              "coverage": "30%",
+              "types": [
+                "number"
+              ]
+            },
+            "intelligence_ranking": {
+              "coverage": "24%",
+              "types": [
+                "object"
+              ]
+            },
+            "bangladesh_relevance_category": {
+              "coverage": "22%",
+              "types": [
+                "string"
+              ]
+            },
+            "is_bangladesh_news": {
+              "coverage": "22%",
+              "types": [
+                "boolean"
+              ]
+            },
+            "bangladesh_relevance_score": {
+              "coverage": "21%",
+              "types": [
+                "number"
+              ]
+            },
+            "bias_label": {
+              "coverage": "18%",
+              "types": [
+                "object"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "google_news_database_en_usa",
+      "collections": [
+        {
+          "name": "election",
+          "count": 0,
+          "sampled": 0,
+          "kind": "empty",
+          "language": "mixed/unknown",
+          "date_range": null,
+          "fields": {}
+        },
+        {
+          "name": "rumor_checks",
+          "count": 0,
+          "sampled": 0,
+          "kind": "fact_check?",
+          "language": "mixed/unknown",
+          "date_range": null,
+          "fields": {}
+        },
+        {
+          "name": "subscriptions",
+          "count": 0,
+          "sampled": 0,
+          "kind": "empty",
+          "language": "mixed/unknown",
+          "date_range": null,
+          "fields": {}
+        },
+        {
+          "name": "points",
+          "count": 1,
+          "sampled": 1,
+          "kind": "other",
+          "language": "mixed/unknown",
+          "date_range": {
+            "from": "2026-06-26T20:58:01.885Z",
+            "to": "2026-06-26T20:58:02.014Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "userId": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "totalPoints": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "availablePoints": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "pendingPoints": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "lifetimeEarned": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "lifetimeWithdrawn": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "dailyStats": {
+              "coverage": "100%",
+              "types": [
+                "object"
+              ]
+            },
+            "createdAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "updatedAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "__v": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            }
+          }
+        },
+        {
+          "name": "google_news_events",
+          "count": 87,
+          "sampled": 87,
+          "kind": "other",
+          "language": "mostly English",
+          "date_range": {
+            "from": "2026-06-28T12:03:46.472Z",
+            "to": "2026-07-06T01:16:07.141Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "category": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "url": {
+              "coverage": "99%",
+              "types": [
+                "string"
+              ]
+            },
+            "info": {
+              "coverage": "99%",
+              "types": [
+                "object"
+              ]
+            },
+            "published_time": {
+              "coverage": "99%",
+              "types": [
+                "string"
+              ]
+            },
+            "scraped_at": {
+              "coverage": "99%",
+              "types": [
+                "date"
+              ]
+            },
+            "source": {
+              "coverage": "99%",
+              "types": [
+                "string"
+              ]
+            },
+            "source_logo": {
+              "coverage": "99%",
+              "types": [
+                "string"
+              ]
+            },
+            "tab_name": {
+              "coverage": "99%",
+              "types": [
+                "string"
+              ]
+            },
+            "title": {
+              "coverage": "99%",
+              "types": [
+                "string"
+              ]
+            },
+            "last_updated": {
+              "coverage": "99%",
+              "types": [
+                "date"
+              ]
+            },
+            "country_code": {
+              "coverage": "98%",
+              "types": [
+                "string"
+              ]
+            },
+            "language_code": {
+              "coverage": "98%",
+              "types": [
+                "string"
+              ]
+            },
+            "show_image": {
+              "coverage": "98%",
+              "types": [
+                "boolean"
+              ]
+            },
+            "topics_extracted_at": {
+              "coverage": "98%",
+              "types": [
+                "date"
+              ]
+            },
+            "article_image": {
+              "coverage": "95%",
+              "types": [
+                "string"
+              ]
+            },
+            "ai_processed": {
+              "coverage": "67%",
+              "types": [
+                "boolean"
+              ]
+            },
+            "ai_processed_at": {
+              "coverage": "67%",
+              "types": [
+                "date"
+              ]
+            },
+            "intelligence_ranking": {
+              "coverage": "67%",
+              "types": [
+                "object"
+              ]
+            },
+            "published_at": {
+              "coverage": "14%",
+              "types": [
+                "date"
+              ]
+            },
+            "bias_label": {
+              "coverage": "5%",
+              "types": [
+                "object"
+              ]
+            },
+            "is_us_news": {
+              "coverage": "3%",
+              "types": [
+                "boolean"
+              ]
+            },
+            "time_to_read": {
+              "coverage": "3%",
+              "types": [
+                "number"
+              ]
+            },
+            "us_relevance_category": {
+              "coverage": "3%",
+              "types": [
+                "string"
+              ]
+            }
+          }
+        },
+        {
+          "name": "newsmedia",
+          "count": 11149,
+          "sampled": 200,
+          "kind": "other",
+          "language": "mostly English",
+          "date_range": {
+            "from": "2026-02-07T16:02:41.036Z",
+            "to": "2026-06-19T00:13:31.462Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "name": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "url": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "domain": {
+              "coverage": "66%",
+              "types": [
+                "string"
+              ]
+            },
+            "geo": {
+              "coverage": "66%",
+              "types": [
+                "string"
+              ]
+            },
+            "region": {
+              "coverage": "66%",
+              "types": [
+                "string"
+              ]
+            },
+            "type": {
+              "coverage": "66%",
+              "types": [
+                "string"
+              ]
+            },
+            "allsides_url": {
+              "coverage": "66%",
+              "types": [
+                "string"
+              ]
+            },
+            "news_selector": {
+              "coverage": "66%",
+              "types": [
+                "object"
+              ]
+            },
+            "total_upvote_count": {
+              "coverage": "66%",
+              "types": [
+                "number"
+              ]
+            },
+            "coverage_areas": {
+              "coverage": "66%",
+              "types": [
+                "array"
+              ]
+            },
+            "credibility_score": {
+              "coverage": "66%",
+              "types": [
+                "null"
+              ]
+            },
+            "tier": {
+              "coverage": "66%",
+              "types": [
+                "string"
+              ]
+            },
+            "bias": {
+              "coverage": "66%",
+              "types": [
+                "object"
+              ]
+            },
+            "created_at": {
+              "coverage": "35%",
+              "types": [
+                "date"
+              ]
+            },
+            "status": {
+              "coverage": "35%",
+              "types": [
+                "string"
+              ]
+            }
+          }
+        },
+        {
+          "name": "pointstransactions",
+          "count": 1,
+          "sampled": 1,
+          "kind": "other",
+          "language": "mixed/unknown",
+          "date_range": {
+            "from": "2026-06-26T20:58:02.052Z",
+            "to": "2026-06-26T20:58:02.052Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "userId": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "type": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "action": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "points": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "balanceAfter": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "referenceId": {
+              "coverage": "100%",
+              "types": [
+                "null"
+              ]
+            },
+            "referenceType": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "metadata": {
+              "coverage": "100%",
+              "types": [
+                "object"
+              ]
+            },
+            "description": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "createdAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "updatedAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "__v": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            }
+          }
+        },
+        {
+          "name": "widgetapikeys",
+          "count": 0,
+          "sampled": 0,
+          "kind": "empty",
+          "language": "mixed/unknown",
+          "date_range": null,
+          "fields": {}
+        },
+        {
+          "name": "opinions",
+          "count": 0,
+          "sampled": 0,
+          "kind": "empty",
+          "language": "mixed/unknown",
+          "date_range": null,
+          "fields": {}
+        },
+        {
+          "name": "youtube_videos",
+          "count": 12526,
+          "sampled": 200,
+          "kind": "other",
+          "language": "mostly English",
+          "date_range": {
+            "from": "2020-05-18T21:55:08.000Z",
+            "to": "2026-07-05T05:01:53.514Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "videoId": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "__v": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "categoryIds": {
+              "coverage": "100%",
+              "types": [
+                "array"
+              ]
+            },
+            "channelId": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "channelTitle": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "createdAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "description": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "durationBucket": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "durationSeconds": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "durationString": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "likeCount": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "publishedAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "statsUpdatedAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "thumbnail": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "title": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "updatedAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "viewCount": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            }
+          }
+        },
+        {
+          "name": "referrals",
+          "count": 0,
+          "sampled": 0,
+          "kind": "empty",
+          "language": "mixed/unknown",
+          "date_range": null,
+          "fields": {}
+        },
+        {
+          "name": "withdrawals",
+          "count": 0,
+          "sampled": 0,
+          "kind": "empty",
+          "language": "mixed/unknown",
+          "date_range": null,
+          "fields": {}
+        },
+        {
+          "name": "users",
+          "count": 2,
+          "sampled": 2,
+          "kind": "other",
+          "language": "mixed/unknown",
+          "date_range": {
+            "from": "2026-03-29T21:37:59.598Z",
+            "to": "2026-06-26T20:58:02.479Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "userId": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "globalUserId": {
+              "coverage": "100%",
+              "types": [
+                "array"
+              ]
+            },
+            "googleId": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "email": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "name": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "profilePicture": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "phoneVerified": {
+              "coverage": "100%",
+              "types": [
+                "boolean"
+              ]
+            },
+            "selectedTopics": {
+              "coverage": "100%",
+              "types": [
+                "array"
+              ]
+            },
+            "isActivated": {
+              "coverage": "100%",
+              "types": [
+                "boolean"
+              ]
+            },
+            "onboardingCompleted": {
+              "coverage": "100%",
+              "types": [
+                "boolean"
+              ]
+            },
+            "isVerified": {
+              "coverage": "100%",
+              "types": [
+                "boolean"
+              ]
+            },
+            "authMethod": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "bubblesPerPage": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "isActive": {
+              "coverage": "100%",
+              "types": [
+                "boolean"
+              ]
+            },
+            "accessTokens": {
+              "coverage": "100%",
+              "types": [
+                "array"
+              ]
+            },
+            "subscriptionStatus": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "subscriptionPlan": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "paymentInfo": {
+              "coverage": "100%",
+              "types": [
+                "array"
+              ]
+            },
+            "createdAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "updatedAt": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "__v": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "referralCode": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "onboardingCompletedAt": {
+              "coverage": "50%",
+              "types": [
+                "date"
+              ]
+            }
+          }
+        },
+        {
+          "name": "userBias",
+          "count": 0,
+          "sampled": 0,
+          "kind": "empty",
+          "language": "mixed/unknown",
+          "date_range": null,
+          "fields": {}
+        }
+      ]
+    },
+    {
+      "name": "google_news_database_id",
+      "collections": [
+        {
+          "name": "google_news_events",
+          "count": 4591,
+          "sampled": 200,
+          "kind": "other",
+          "language": "mostly English",
+          "date_range": {
+            "from": "2025-11-10T07:57:50.371Z",
+            "to": "2025-11-16T18:13:57.415Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "url": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "category": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "info": {
+              "coverage": "100%",
+              "types": [
+                "object"
+              ]
+            },
+            "published_time": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "scraped_at": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "show_image": {
+              "coverage": "100%",
+              "types": [
+                "boolean"
+              ]
+            },
+            "source": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "source_logo": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "tab_name": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "title": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "bias_label": {
+              "coverage": "99%",
+              "types": [
+                "object"
+              ]
+            },
+            "article_image": {
+              "coverage": "36%",
+              "types": [
+                "string"
+              ]
+            },
+            "last_updated": {
+              "coverage": "3%",
+              "types": [
+                "date"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "google_news_database_ng",
+      "collections": [
+        {
+          "name": "google_news_events",
+          "count": 4547,
+          "sampled": 200,
+          "kind": "other",
+          "language": "mostly English",
+          "date_range": {
+            "from": "2025-11-10T07:57:55.194Z",
+            "to": "2025-11-16T17:55:24.437Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "url": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "category": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "info": {
+              "coverage": "100%",
+              "types": [
+                "object"
+              ]
+            },
+            "published_time": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "scraped_at": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "show_image": {
+              "coverage": "100%",
+              "types": [
+                "boolean"
+              ]
+            },
+            "source": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "source_logo": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "tab_name": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "title": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "bias_label": {
+              "coverage": "99%",
+              "types": [
+                "object"
+              ]
+            },
+            "article_image": {
+              "coverage": "40%",
+              "types": [
+                "string"
+              ]
+            },
+            "last_updated": {
+              "coverage": "5%",
+              "types": [
+                "date"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "google_news_database_pk",
+      "collections": [
+        {
+          "name": "google_news_events",
+          "count": 4290,
+          "sampled": 200,
+          "kind": "other",
+          "language": "mostly English",
+          "date_range": {
+            "from": "2025-11-10T07:45:45.077Z",
+            "to": "2025-11-16T18:01:59.695Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "url": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "category": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "info": {
+              "coverage": "100%",
+              "types": [
+                "object"
+              ]
+            },
+            "published_time": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "scraped_at": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "show_image": {
+              "coverage": "100%",
+              "types": [
+                "boolean"
+              ]
+            },
+            "source": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "source_logo": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "tab_name": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "title": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "bias_label": {
+              "coverage": "99%",
+              "types": [
+                "object"
+              ]
+            },
+            "article_image": {
+              "coverage": "39%",
+              "types": [
+                "string"
+              ]
+            },
+            "last_updated": {
+              "coverage": "3%",
+              "types": [
+                "date"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "news_intelligence",
+      "collections": [
+        {
+          "name": "homepage_news",
+          "count": 0,
+          "sampled": 0,
+          "kind": "empty",
+          "language": "mixed/unknown",
+          "date_range": null,
+          "fields": {}
+        },
+        {
+          "name": "google_news_events",
+          "count": 17,
+          "sampled": 17,
+          "kind": "other",
+          "language": "mostly Bangla",
+          "date_range": {
+            "from": "2026-06-21T14:02:52.239Z",
+            "to": "2026-06-21T16:29:06.215Z"
+          },
+          "fields": {
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "title": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "title_en": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "url": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "final_url": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "source": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "category": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "tab_name": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "article_image": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "source_logo": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "published_time": {
+              "coverage": "100%",
+              "types": [
+                "string"
+              ]
+            },
+            "published_at": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "scraped_at": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "last_updated": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "source_count": {
+              "coverage": "100%",
+              "types": [
+                "number"
+              ]
+            },
+            "info": {
+              "coverage": "100%",
+              "types": [
+                "object"
+              ]
+            },
+            "intelligence_ranking": {
+              "coverage": "100%",
+              "types": [
+                "object"
+              ]
+            },
+            "ai_processed": {
+              "coverage": "100%",
+              "types": [
+                "boolean"
+              ]
+            },
+            "ai_processed_at": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "youtube_bangla",
+      "collections": [
+        {
+          "name": "videos",
+          "count": 180,
+          "sampled": 180,
+          "kind": "other",
+          "language": "mixed/unknown",
+          "date_range": {
+            "from": "2025-11-09T01:04:10.493Z",
+            "to": "2025-11-30T02:38:49.396Z"
+          },
+          "fields": {
+            "timestamp": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "metadata": {
+              "coverage": "100%",
+              "types": [
+                "object"
+              ]
+            },
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "data": {
+              "coverage": "100%",
+              "types": [
+                "object"
+              ]
+            }
+          }
+        },
+        {
+          "name": "channels",
+          "count": 12,
+          "sampled": 12,
+          "kind": "other",
+          "language": "mixed/unknown",
+          "date_range": {
+            "from": "2025-11-09T01:03:59.223Z",
+            "to": "2025-11-30T02:38:39.562Z"
+          },
+          "fields": {
+            "timestamp": {
+              "coverage": "100%",
+              "types": [
+                "date"
+              ]
+            },
+            "metadata": {
+              "coverage": "100%",
+              "types": [
+                "object"
+              ]
+            },
+            "_id": {
+              "coverage": "100%",
+              "types": [
+                "objectId"
+              ]
+            },
+            "data": {
+              "coverage": "100%",
+              "types": [
+                "object"
+              ]
+            }
+          }
+        },
+        {
+          "name": "transcripts",
+          "count": 0,
+          "sampled": 0,
+          "kind": "empty",
+          "language": "mixed/unknown",
+          "date_range": null,
+          "fields": {}
+        }
+      ]
+    }
+  ]
+}
